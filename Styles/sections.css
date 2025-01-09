@@ -165,7 +165,8 @@ section {
       }
 
       @media (width >= 90em) {
-        bottom: 20.2rem;
+        bottom: 24.2rem;
+        right: 15rem;
       }
     }
   }
@@ -176,7 +177,7 @@ section {
         gap: 1.5rem;
 
         & h2 {
-          width: 100%;
+          width: 35rem;
         }
       }
     }
@@ -190,7 +191,7 @@ section {
     background: url(../assets/images/bg-pattern.svg);
     text-align: center;
     border-radius: 0.75rem;
-    background-color: var(--LightSalmon50);
+    background-color: var(--Neutral100);
     padding: 5rem 0;
     position: relative;
     overflow: hidden;
@@ -360,7 +361,7 @@ section {
       }
 
       & #middle-card{
-        background-color: var(--LightSalmon50);
+        background-color: var(--Neutral100);
         position: relative;
         overflow: hidden;
 
