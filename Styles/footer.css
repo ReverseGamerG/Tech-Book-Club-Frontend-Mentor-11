@@ -1,0 +1,143 @@
+footer{
+  background-image: url(../assets/images/bg-pattern.svg);
+  background-color: var(--Neutral900);
+  padding: 3rem 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  text-align: center;
+
+  & br{
+    display: none;
+  }
+
+  & .footer-text{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+
+    & h2{
+      font: var(--text-2m);
+      color: var(--LightSalmon50);
+    }
+
+    & .btn-rvw{
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      justify-content: center;
+      align-items: center;
+
+      & .reviews{
+        display: flex;
+        align-items: center;
+        gap: .75rem;
+
+         & div:first-child{
+          & img{
+            width: 6.875rem;
+          }
+        }
+
+        & div:last-child{
+          & p{
+            font: var(--text-7);
+            color: var(--Neutral0);
+          }
+        }    
+      }
+
+      & .button{
+        background-color: var(--Neutral900);
+        border: 3px solid var(--Neutral0);
+
+        & p{
+          color: var(--Neutral0);
+        }
+
+        &:hover{
+          background-image: linear-gradient(
+          #385159 0%, #062630 100% );
+        }
+
+        &:focus, &:focus-within{
+          background-image: linear-gradient(
+          #385159 0%, #062630 100% );
+          outline-color: var(--Neutral0);
+        }
+      }
+    }
+  }
+
+  & .links{
+    width: 100%;
+    border-top: 1px solid var(--Neutral700);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: var(--Neutral0);
+    padding-block: 1.5rem;
+
+    & p{
+      font: var(--text-7);
+    }
+
+    & .links-img{
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+
+      & img{
+        width: 1.5rem;
+        height: 1.5rem;
+        transition: opacity .5s;
+
+        &:hover{
+          opacity: .5;
+        }
+      }
+    }
+  }
+
+  @media (width >= 48em){
+    padding: 4rem 0 0;
+
+    & br{
+      display: initial;
+    }
+
+    & .footer-text{
+      margin-inline: 2rem;
+    }
+
+    & h2{
+      font: var(--text-2);
+    }
+
+    & .links{
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0;
+      padding-inline: 2rem;
+    }
+  }
+
+  @media (width >= 90em){
+    padding: 5rem 0 0;
+    
+    & .footer-text{
+      max-width: 47rem;
+      margin: 0;
+    }
+
+    & .links{
+      max-width: 73.125rem;
+      padding-right: 0;
+    }
+  }
+}
